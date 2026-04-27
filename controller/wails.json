@@ -1,0 +1,19 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "iot-lab-controller",
+  "outputfilename": "controller-gui",
+  "frontend:install": "cmd /c echo skip-install",
+  "frontend:build": "cmd /c echo skip-build",
+  "frontend:dev:watcher": "cmd /c echo skip-watcher",
+  "frontend:dev:serverUrl": "auto",
+  "wailsjsdir": "./frontend",
+  "author": {
+    "name": "haqua"
+  },
+  "info": {
+    "companyName": "iot-lab",
+    "productName": "IoT Lab Controller",
+    "productVersion": "0.4.0-mvp4",
+    "copyright": "lab"
+  }
+}

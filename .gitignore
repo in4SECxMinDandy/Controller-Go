@@ -1,0 +1,12 @@
+*.exe
+*.pem
+*.key
+*.pdf
+*.log
+/agent/agent.exe
+/controller/controller.exe
+/controller/build/
+node_modules/
+.idea/
+.vscode/
+.devin/config.local.json

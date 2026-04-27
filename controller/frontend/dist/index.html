@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>IoT Lab Controller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside id="sidebar">
+    <header>
+      <h2>Agents</h2>
+      <button id="refresh" title="Refresh">⟳</button>
+    </header>
+    <ul id="list"><li class="empty">đang tải…</li></ul>
+    <footer>
+      <small id="server-info">…</small>
+    </footer>
+  </aside>
+
+  <main id="stage">
+    <div id="welcome">
+      <h1>IoT Lab Controller</h1>
+      <p>Chọn 1 agent ở thanh bên trái để xem màn hình và điều khiển.</p>
+    </div>
+    <div id="viewer" hidden>
+      <header id="viewbar">
+        <span><b id="cur-id"></b> · <span id="cur-os"></span></span>
+        <label><input type="checkbox" id="ctl-toggle" checked> điều khiển</label>
+        <span id="ws-status"><span class="dot off"></span><span id="ws-text">…</span></span>
+        <button id="close-btn">✕</button>
+      </header>
+      <div id="screen-wrap">
+        <img id="screen" draggable="false">
+      </div>
+    </div>
+  </main>
+
+  <script src="/wails/runtime.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
